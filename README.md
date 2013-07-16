@@ -1,4 +1,4 @@
-## Start Frontend Assets
+## Starter Frontend Assets
 
 #### About:
 
