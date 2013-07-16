@@ -15,5 +15,6 @@ Assets is not another frontend framework. It's just some boilerplate css code wr
 
 #### How to use
 
-1. clone https://github.com/leocristofani/assets.git assets
-2. open the terminal, cd into the assets file and type 'compass watch'
+1. install sass and compass
+2. clone https://github.com/leocristofani/assets.git assets
+3. open the terminal, cd into the assets file, type 'compass watch' to start watching for changes in your Sass files and have fun coding!
