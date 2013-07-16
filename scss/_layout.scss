@@ -19,14 +19,14 @@
 [class*=l-col] {
   @include box-sizing(border-box);
   float: left;
+  padding: $col-padding;
   @include respond-to(max-width, $tablet-portrait) {
     float: none;
     width: 100% !important;
     overflow: hidden;
   }
 
-  // custom - edit or remove depending on the project
-  padding: 5px 10px;
+  // custom - edit or remove depending on your project
   background: $color-gray-lighter;
   border: 1px $color-white solid;
 }
