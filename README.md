@@ -4,7 +4,7 @@
 
 Assets is not another frontend framework. It's just some boilerplate css code written in Sass & Compass, which follows the SMACSS arquitecture. It's got a lean flexible grid system, some base styles and some very useful variables to start and project.
 
-#### Main files: (assets/)
+#### Main files: (scss/)
 
 1. _variables.scss - manipulate the variables in this file to fit you project needs.
 2. _mixins.scss - at this moment this file contains only one mixin call 'respont-to' which is extremely useful for media queries.
