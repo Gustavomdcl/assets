@@ -2,7 +2,7 @@
 
 #### About:
 
-Assets is not another frontend framework. It's just some boilerplate css code written in Sass & Compass, which follows the SMACSS arquitecture. It's got a lean flexible grid system, some base styles and some very useful variables to get you started quickly.
+Assets is not another frontend framework. It's just some boilerplate css code written in **Sass** & **Compass**, which follows the **SMACSS** arquitecture. It's got a lean flexible grid system, some base styles and some very useful variables to get you started quickly.
 
 #### Main files: (scss/)
 
@@ -15,6 +15,6 @@ Assets is not another frontend framework. It's just some boilerplate css code wr
 
 #### How to use
 
-1. Make sure you have Sass and Compass installed.
+1. Make sure you have **Sass** and **Compass** installed.
 2. Open your terminal and clone the repo (clone https://github.com/leocristofani/assets.git assets).
 3. Still in the terminal, cd into the assets file, type 'compass watch' to start watching for changes in your Sass files and have fun coding!
