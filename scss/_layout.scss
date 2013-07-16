@@ -1,0 +1,59 @@
+// container -----------------------------
+
+.l-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+// row & cf ------------------------------
+
+.l-row,
+.cf {
+  &:before,
+  &:after { content: ''; display: table; }
+  &:after { clear: both; }
+}
+
+// columns -------------------------------
+
+[class*=l-col] {
+  @include box-sizing(border-box);
+  float: left;
+  @include respond-to(max-width, $tablet-portrait) {
+    float: none;
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  // custom
+  padding: 5px 10px;
+  background: $color-gray-lighter;
+  border: 1px $color-white solid;
+}
+
+$column_width: percentage(1/$num_columns);
+@for $i from 1 through $num_columns {
+  .l-col#{$i} {
+    width: $i * $column_width;
+  }
+}
+
+// header --------------------------------
+
+.l-header {}
+.l-header-top {}
+.l-header-center {}
+.l-header-bottom {}
+
+// main ----------------------------------
+
+.l-main {}
+.l-main-sidebar {}
+.l-main-content {}
+
+// footer --------------------------------
+
+.l-footer {}
+.l-footer-top {}
+.l-footer-center {}
+.l-footer-bottom {}
