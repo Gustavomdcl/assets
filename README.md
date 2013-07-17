@@ -17,6 +17,6 @@ Assets is not another frontend framework. It's just some boilerplate css code wr
 
 1. Make sure you have **Sass** and **Compass** installed.
 2. Open your terminal and clone the repo (clone https://github.com/leocristofani/assets.git assets).
-3. Open scss/_layout.scss and remove lines 29 - 31, as they're just there to showcase the grid system in the examples page.
+3. Open scss/_layout.scss and remove lines 29 - 31, as they're just there to showcase the grid system in the examples.html page.
 4. In your terminal, cd into the assets file, type 'compass watch' to start watching for changes in your Sass files and have fun coding!
 
