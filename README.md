@@ -24,5 +24,9 @@ Assets is not another frontend framework. It's just some boilerplate css code wr
 
 - The grid system is composed of three main classes: 'l-container', 'l-row' and 'l-col'.
 - Layout selectors are prefixed with 'l-' as recommended by the SMACSS arquitecture.
+<<<<<<< HEAD
 - Column width is percentage based and utilize the 'border-sizing: border-box' property to make it easier to calculate and modify. For instance, you can set the number of columns you need by editing a single variable in scss/_layout.scss called $col_columns.
+=======
+- Columns' width are percentage based and utilize the 'border-sizing: border-box' property to have it easier for column width calculation and future modification. You can for example, set the number of columns you wish to use editing a single variable ($col_columns in scss/_layout.scss).
+>>>>>>> 42fb2c82c41de54937821e842b8ea0898556790d
 
