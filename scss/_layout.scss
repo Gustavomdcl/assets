@@ -1,7 +1,7 @@
 // container -----------------------------
 
 .l-container {
-  max-width: 960px;
+  max-width: $container-max-width;
   margin: 0 auto;
 }
 
