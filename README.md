@@ -20,3 +20,9 @@ Assets is not another frontend framework. It's just some boilerplate css code wr
 3. Open scss/_layout.scss and remove lines 29 - 31, as they're just there to showcase the grid system in the examples.html page.
 4. In your terminal, cd into the assets file, type 'compass watch' to start watching for changes in your Sass files and have fun coding!
 
+#### The Grid System
+
+- The grid system is composed of three main classes: 'l-container', 'l-row' and 'l-col'.
+- Layout selectors are prefixed with 'l-' as recommended by the SMACSS arquitecture.
+- Column width is percentage based and utilize the 'border-sizing: border-box' property to make it easier to calculate and modify. For instance, you can set the number of columns you need by editing a single variable in scss/_layout.scss called $col_columns.
+
