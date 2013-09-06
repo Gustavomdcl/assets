@@ -4,14 +4,14 @@ module.exports = function(grunt) {
 
   	// read package.json
     pkg: grunt.file.readJSON('package.json'),
-    
+
     // concat js
     concat: {
       options: {
         separator: ';'
       },
       dist: {
-        src: ['src/js/*.js'],
+        src: ['src/js/*.js', '!src/js/libs/*.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -38,23 +38,20 @@ module.exports = function(grunt) {
     },
 
     // imagemin
-    imagemin: {                         
+    imagemin: {
 	    dynamic: {
-        options: {                      
-          optimizationLevel: 3
-        },                   
 	      files: [{
-	        expand: true,                 
-	        cwd: 'src/img/',                  
-	        src: ['**/*.{png,jpg,gif}'],  
-	        dest: 'dist/img/'                 
+	        expand: true,
+	        cwd: 'src/img/',
+	        src: ['**/*.{png,jpg,gif}', '!sprite/*.png'],
+	        dest: 'dist/img/'
 	      }]
 	    }
 	  },
 
     // watch
     watch: {
-      files: ['src/img/*.{png,jpg,gif}', 'src/scss/*.scss', 'src/js/*.js'],
+      files: ['src/js/*.js', 'src/img/*.{png,jpg,git}', 'src/scss/*.scss'],
       tasks: ['concat', 'uglify', 'compass', 'imagemin']
     }
 

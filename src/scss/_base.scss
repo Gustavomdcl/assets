@@ -31,10 +31,10 @@ h6 { font-size: 1.1em; }
 a {
   text-decoration: none;
   color: $color-gray-dark;
-  &:visited { color: $color-gray-darker; }
-  &:hover   { color: $color-gray-darker; }
-  &:focus   { color: $color-gray-darker; }
-  &:active  { color: $color-gray-darker; }
+  &:visited { color: $color-gray-dark; }
+  &:hover   { color: $color-gray-dark; }
+  &:focus   { color: $color-gray-dark; }
+  &:active  { color: $color-gray-dark; }
 }
 
 /* forms ------------------------ */

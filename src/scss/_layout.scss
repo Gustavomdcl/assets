@@ -20,15 +20,6 @@
   @include box-sizing(border-box);
   float: left;
   padding: $col-padding;
-  @include respond-to(max-width, $tablet-portrait) {
-    float: none;
-    width: 100% !important;
-    overflow: hidden;
-  }
-
-  // custom - edit or remove depending on your project
-  background: $color-gray-lighter;
-  border: 1px $color-white solid;
 }
 
 $column_width: percentage(1/$num_columns);

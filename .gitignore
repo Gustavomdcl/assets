@@ -2,4 +2,4 @@
 .sass-cache
 css/*.css
 dist/
-/node-modules
+node-modules/
