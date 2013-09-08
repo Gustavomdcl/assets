@@ -34,7 +34,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/img/',
-          src: ['**/*.{png,jpg,gif}', '!sprite/*.png'],
+          src: ['**/*.{png,jpg,gif}'],
           dest: 'dist/img/'
         }]
       }
@@ -46,10 +46,8 @@ module.exports = function(grunt) {
         options: {
           httpPath: '/',
           sassDir: 'src/scss',
-          imagesDir: 'src/img',
           cssDir: 'dist/css',
-          generatedImagesDir: 'dist/img',
-          generatedImagesPath: 'dist/img',
+          imagesDir: 'dist/img',
           relativeAssets: true,
           outputStyle: 'expanded' // nested, expanded, compact, compressed.
         }
