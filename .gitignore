@@ -1,5 +1,4 @@
-.DS_Store
 .sass-cache
-css/*.css
 dist/
 node_modules/
+.DS_Store

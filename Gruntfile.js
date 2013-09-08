@@ -28,31 +28,38 @@ module.exports = function(grunt) {
       }
     },
 
-    // compass
-    compass: {
-    	dist: {
-      	options: {
-	        config: 'config.rb'
-	      }
-	    }
-    },
-
     // imagemin
     imagemin: {
-	    dynamic: {
-	      files: [{
-	        expand: true,
-	        cwd: 'src/img/',
-	        src: ['**/*.{png,jpg,gif}', '!sprite/*.png'],
-	        dest: 'dist/img/'
-	      }]
-	    }
-	  },
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'src/img/',
+          src: ['**/*.{png,jpg,gif}', '!sprite/*.png'],
+          dest: 'dist/img/'
+        }]
+      }
+    },
+
+    // compass
+    compass: {
+      dist: {
+        options: {
+          httpPath: '/',
+          sassDir: 'src/scss',
+          imagesDir: 'src/img',
+          cssDir: 'dist/css',
+          generatedImagesDir: 'dist/img',
+          generatedImagesPath: 'dist/img',
+          relativeAssets: true,
+          outputStyle: 'expanded' // nested, expanded, compact, compressed.
+        }
+      }
+    },
 
     // watch
     watch: {
       files: ['src/js/*.js', 'src/img/*.{png,jpg,git}', 'src/scss/*.scss'],
-      tasks: ['concat', 'uglify', 'compass', 'imagemin']
+      tasks: ['concat', 'uglify', 'imagemin', 'compass']
     }
 
   });
@@ -65,6 +72,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // register tasks
-  grunt.registerTask('default', ['concat', 'uglify', 'compass', 'imagemin']);
+  grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'compass']);
 
 };
